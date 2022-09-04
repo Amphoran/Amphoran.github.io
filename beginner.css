@@ -244,6 +244,7 @@ body
     {
         display: none;
         padding: 0 1.5vw 2vh 1.5vw;
+        font-size: 1.15vw;
     }
 
     .dropdown_arrow {
@@ -258,35 +259,6 @@ body
         transform: rotate(45deg);
     }
 
-    #iframevideo 
-    {
-    width: 100%;
-    height: 37vh;
-    padding-bottom: 100px;
-    margin-bottom: 100px; 
-    }
-
-.iframevideo
-{
-    height: 37vh;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .displayvideo iframe {
-        /* height = 100 * (9 / 16) = 56.25 */
-        height: 56.25vw;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .displayvideo iframe {
-        /* width = 100 / (9 / 16) = 177.777777 */
-        width: 177.78vh;
-    }
-}
-
     #aimingbox
     {
         position: absolute;
@@ -299,6 +271,19 @@ body
         left: 40vw;
         /* margin-left: 5vw; */
         transform: translate(0, -80vh);
+    }
+
+    .iframevideo
+    {
+        height: 30.5vh;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .w-tapvideo
+    {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 
     .exampleboxheadercursoricon 
