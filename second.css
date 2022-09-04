@@ -110,6 +110,13 @@
     margin-bottom: 100px; 
 }
 
+.iframevideo
+{
+    height: 26vh;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .w-tapvideo
 {
     margin-top: 5vh;
