@@ -71,6 +71,7 @@
 {
     display: none;
     padding: 0 1.5vw 2vh 1.5vw;
+    font-size: 1.15vw;
 }
 
 .dropdown_arrow {
@@ -143,3 +144,4 @@
 {
     cursor: pointer;
 }
+
