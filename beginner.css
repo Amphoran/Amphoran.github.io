@@ -268,8 +268,23 @@ body
 
 .iframevideo
 {
+    height: 37vh;
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .displayvideo iframe {
+        /* height = 100 * (9 / 16) = 56.25 */
+        height: 56.25vw;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .displayvideo iframe {
+        /* width = 100 / (9 / 16) = 177.777777 */
+        width: 177.78vh;
+    }
 }
 
     #aimingbox
