@@ -1,3 +1,15 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(mokoto.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/Poppins-Regular.eot?e54f6a914cfdad667f28e87396234bda);
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
 body
     {
         margin: 0;
@@ -56,7 +68,7 @@ body
         align-items: center;
         box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
         z-index: 69;
-		transition: all 500ms ease-in-out;
+		transition: all 150ms ease-in-out;
     }
     
     /* 
@@ -72,6 +84,7 @@ body
 
     .navtext 
     {
+		font-family:Poppins;
         color: #bebebedc !important;
         border: 1px;
         border-radius: 5px;
@@ -124,7 +137,7 @@ body
         color: #ffffff !important;
         text-shadow: 3px 3px 12px #FFFFFF;
         animation-name: fadein;
-        animation-duration: 2.4s;
+        /*animation-duration: 2.4s;*/
         animation-timing-function: ease;
     }
 
@@ -153,7 +166,8 @@ body
 			overflow:hidden;
 			filter: none;
 	}
-		.displayvideo
+	
+	.displayvideo
     {
         position: relative;
         overflow: hidden;
@@ -236,13 +250,15 @@ body
         transform: translate(0, -50%);
         left: 20vw;
         font-size: 4vw;
-        font-family: Montserrat, sans-serif; 
-        font-weight: bold;
+        font-family: myFirstFont, Montserrat, sans-serif; 
+        /*font-weight: bold;*/
         color: white;
         z-index: 2;
-        -webkit-animation: glow 2s ease-in-out infinite alternate;
-        -moz-animation: glow 2s ease-in-out infinite alternate;
-        animation: glow 2s ease-in-out infinite alternate;
+		
+        -webkit-animation: glow 5s ease-in-out infinite alternate;
+        -moz-animation: glow 5s ease-in-out infinite alternate;
+        animation: glow 5s ease-in-out infinite alternate;
+		
     }
 
     @-webkit-keyframes glow {
@@ -250,7 +266,7 @@ body
           text-shadow: 0 0 10px #fff;
         }
         to {
-          text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 35px #fff;
+          text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
         }
       }
 
@@ -261,13 +277,15 @@ body
         transform: translate(0, -50%);
         left: 20vw;
         font-size: 1.5vw;
-        font-family: Montserrat, sans-serif; 
-        font-weight: bold;
+        font-family: myFirstFont, Montserrat, sans-serif; 
+        /*font-weight: bold;*/
         color: white;
         z-index: 2;
-        -webkit-animation: glow 2s ease-in-out infinite alternate;
-        -moz-animation: glow 2s ease-in-out infinite alternate;
-        animation: glow 2s ease-in-out infinite alternate;
+		
+        -webkit-animation: glow 5s ease-in-out infinite alternate;
+        -moz-animation: glow 5s ease-in-out infinite alternate;
+        animation: glow 5s ease-in-out infinite alternate;
+		
     }
     
 
