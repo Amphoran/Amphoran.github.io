@@ -1,12 +1,14 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url(mokoto.ttf);
+  src: url(mokoto.otf);
+  font-weight: normal;
+  font-style: normal;
+
 }
 @font-face {
   font-family: Poppins;
   src: url(/fonts/Poppins-Regular.eot?e54f6a914cfdad667f28e87396234bda);
-  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -249,7 +251,7 @@ body
         top: 45%;
         transform: translate(0, -50%);
         left: 20vw;
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-family: myFirstFont, Montserrat, sans-serif; 
         /*font-weight: bold;*/
         color: white;
@@ -261,14 +263,7 @@ body
 		
     }
 
-    @-webkit-keyframes glow {
-        from {
-          text-shadow: 0 0 10px #fff;
-        }
-        to {
-          text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
-        }
-      }
+    
 
     .introdescription
     {
@@ -276,7 +271,7 @@ body
         top: 45%;
         transform: translate(0, -50%);
         left: 20vw;
-        font-size: 1.5vw;
+        font-size: 1.3125vw;
         font-family: myFirstFont, Montserrat, sans-serif; 
         /*font-weight: bold;*/
         color: white;
@@ -287,7 +282,14 @@ body
         animation: glow 5s ease-in-out infinite alternate;
 		
     }
-    
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff;
+        }
+        to {
+          text-shadow: 0 0 5.5px #fff, 0 0 6px #fff, 0 0 6.5px #fff;
+        }
+      }
 
     .navtext:focus-visible {
         outline: none !important;

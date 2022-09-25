@@ -1,14 +1,12 @@
 @font-face {
   font-family: myFirstFont;
   src: url(mokoto.ttf);
-  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Poppins;
   src: url(/fonts/Poppins-Regular.eot?e54f6a914cfdad667f28e87396234bda);
-  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +16,6 @@
 	font-family: mySecondFont;
 	src: url(conthrax-sb.ttf);
 	/*MinecraftRegular-Bmg3.otf*/
-	font-display: swap;
 	font-weight: normal;
 	font-style: normal;
 }
