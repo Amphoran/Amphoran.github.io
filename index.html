@@ -200,38 +200,11 @@
 			iframe.src = videoLink;
 			iframe.play();
 		</script>
-			<script>
-				const body = document.body;
-				let lastScroll = 0;
-
-				window.addEventListener("scroll", () => 
-				{
-					const currentScroll = window.pageYOffset;
-					if (currentScroll <= 50) {
-						body.classList.remove("scroll-up");
-						return;
-					}
-
-					if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) 
-					{
-						body.classList.remove("scroll-up");
-						body.classList.add("scroll-down");
-					} 
-					else if (currentScroll < lastScroll && body.classList.contains("scroll-down")) 
-					{
-						body.classList.remove("scroll-down");
-						body.classList.add("scroll-up");
-					}
-					lastScroll = currentScroll;
-				});
-				
-			</script>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
-			<script type="text/javascript" src="exampleboxscript.js">
-			</script>
+		<script type="text/javascript" src="navbarscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="exampleboxscript.js"></script>
            
 
     </body>
