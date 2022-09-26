@@ -78,6 +78,7 @@
 {
     padding: 20px;
     margin-top: 1.5vh !important; 
+	
 }
 
 
@@ -108,8 +109,18 @@
     display: none;
     padding: 0 1.5vw 2vh 1.5vw;
     font-size: 1vw;
+	
+	
 }
 
+.exampledropdowntext1
+{
+	height: 6vw;
+}
+.exampledropdowntext2
+{
+	height: 9vw;
+}
 .dropdown_arrow {
     left: 20vw;
     top: 2.7vh;
@@ -149,9 +160,10 @@
 .iframevideo
 {
     height: 12.5vw;
-	
+    border-radius: 8px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+	overflow:hidden;
 }
 
 .w-tapvideo
