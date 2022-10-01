@@ -133,43 +133,24 @@
     transform: rotate(45deg);
 }
 
-#examplecontent1
-
-#examplecontent2
-{
-    margin-bottom: 10vh;
-    padding-bottom: 10vh;
-}
-
-#examplecontent3
-
-#examplecontent4
-
-#examplecontent5
-
-#examplecontent6
-
-#iframevideo 
-{
-    width: 100%;
-    height: 100vh !important;
-    padding-bottom: 100px;
-    margin-bottom: 100px; 
-}
 
 .iframevideo
 {
-    height: 12.05vw;
-    border-radius: 8px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-	overflow:hidden;
+    position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
 }
 
 .w-tapvideo
 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    position:relative;
+	overflow:hidden;
+	padding-bottom: 56.25%;
+	border-radius:8px;
+	margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 
