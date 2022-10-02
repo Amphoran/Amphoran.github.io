@@ -136,7 +136,8 @@
 
 .iframevideo
 {
-    position:absolute;
+	position:absolute;
+	border-radius:8px;
 	top:0;
 	left:0;
 	height:100%;
@@ -145,12 +146,11 @@
 
 .w-tapvideo
 {
-    position:relative;
+    	position:relative;
 	overflow:hidden;
 	padding-bottom: 56.25%;
-	border-radius:8px;
 	margin-top: 2vw;
-    margin-bottom: 2vw;
+    	margin-bottom: 2vw;
 }
 
 
