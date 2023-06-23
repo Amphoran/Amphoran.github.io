@@ -18,11 +18,15 @@
 
     <body>
         <div class="main">
-
+			<div class = "containertriangle">
+				<div class = "shapebackground">
+					<!--<img class = "backgroundimage1" src = "DiamondSword.png">-->					
+				</div>
+			</div>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
                 <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="https://github.com/Pleyur/pleyur.github.io/blob/main/rod.png?raw=true">
+                    <img class="logo" src="https://github.com/Amphoran/Amphoran.github.io/blob/main/NewLogo.png?raw=true">
 
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,53 +54,85 @@
                 </div>
                 </div>
             </nav>
-            
-            
-            <!-- <div class="beginnerlessons">
-            
-                <div class="font sectionheader" id="beginnerheader">
-                    Beginner 
-                </div>
-                <div class="beginnerbackground"></div>
-                <a href="beginner.html" class="beginnerimagecontainer">
-                    <img src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/main/lessonsbeginnerimage.png" class="beginnerimage" id="beginnerimage">
-                </a>
-            </div> -->
-
-            <div class="beginnerlessons" onclick="window.location.href='beginner.html';">
-                <div class="font sectionheader" id="beginnerheader">
-                    Beginner 
-                </div>
-                <div class="beginnerbackground"></div>
-                <div class="beginnerimagecontainer">
-                    <img src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/main/lessonsbeginnerimage.png" class="beginnerimage" id="beginnerimage">
-                </div>
-            </div>
-
-            <div class="intermediatelessons" onclick="window.location.href='intermediate.html';">
-                <div class="font sectionheader" id="intermediateheader">
-                    Intermediate 
-                </div>
-                <div class="intermediatebackground"></div>
-                <div id="intermediateimagecontainer">
-                    <img src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/main/lessonsintermediateimage.png" class="intermediateimage" id="intermediateimage">
-                </div>
-            </div>
-
-            <div class="advancedlessons" onclick="window.location.href='advanced.html';">
-                <div class="font sectionheader" id="advancedheader">
-                    Advanced  
-                </div>
-                <div class="advancedbackground"></div>
-                <div id="advancedimagecontainer">
-                    <img src="https://raw.githubusercontent.com/Amphoran/Amphoran.github.io/main/lessonsadvancedimage.png" class="advancedimage" id="advancedimage">
-                </div>
-            </div>
-            
-
-
-        </div>    
-
+			<div class = "lessonsbody">
+					<div class = "row rowsize">
+						<div class="col-5 borders">
+							<div class = "titlelessons">
+								Lessons
+								<div class = "titledescrip">
+									Master Skills According To Your PvP Level
+								</div>
+	
+							</div>
+						</div>
+						
+						<div class="col-7" style= "padding-left:0;">
+							<div class = "row rowsizesmall">
+								<div class = "col-lg-4 col-md-6 col-12 cols" id = "colcenter">
+									<a class = "difflevel" href="beginner.html">
+										<div class = "headingofbox">
+											Beginner
+										</div>
+										
+										<div class = "bodyofbox">
+											This course teaches fundamental skills that will provide a strong foundation for your PvP journey.
+										</div>
+										
+										<div class = "boximagecontainer">
+											<img class = "boximage" src ="copperingot.png">											
+										</div>
+										<div class = "bottomofbox">
+											<u>Go to Beginner Lessons</u> 🠆
+										</div>
+									
+									
+									</a>
+								</div>
+								<div class = "col-lg-4 col-md-6 col-12 cols" id = "colcenter">
+									<a class = "difflevel" href="intermediate.html">
+										<div class = "headingofbox">
+											Intermediate
+										</div>
+										<div class = "bodyofbox">
+											For more seasoned players, this course will teach you concepts to boost your skill level.
+										</div>
+										<div class = "boximagecontainer">
+											<img class = "boximage" src ="ironingot.png">											
+										</div>
+										
+										<div class = "bottomofbox">
+											<u>Go to Intermediate Lessons</u> 🠆
+										</div>
+									
+									
+									</a>
+								</div>
+								<div class = "col-lg-4 col-md-6 col-12 cols" id = "colcenter">
+									<a class = "difflevel" href="advanced.html">
+										<div class = "headingofbox">
+											Advanced
+										</div>
+										<div class = "bodyofbox">
+											For skilled players, this course, which teaches complex game mechanics, may be for you. 
+										</div>
+										<div class = "boximagecontainer">
+											<img class = "boximage" src ="goldingot.png">											
+										</div>
+										
+										<div class = "bottomofbox">
+											<u>Go to Advanced Lessons</u> 🠆
+										</div>
+									
+									
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script type="text/javascript" src="navbarscript.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>

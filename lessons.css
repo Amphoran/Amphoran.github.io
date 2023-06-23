@@ -1,41 +1,102 @@
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(mokoto.otf);
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/Poppins-Regular.eot?e54f6a914cfdad667f28e87396234bda);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+	font-family: mySecondFont;
+	src: url(conthrax-sb.ttf);
+	/*MinecraftRegular-Bmg3.otf*/
+	font-weight: normal;
+	font-style: normal;
+}
 body
     {
         margin: 0;
         padding: 0;
-        background-color: #383838;
+        background-color: #ececec;
         height: 100%;
-        color: #fff;
+		
     }
-    
-    .font 
+	/* width */
+	::-webkit-scrollbar 
+	{
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track 
+	{
+	  background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb 
+	{
+	  background: #444;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover 
+	{
+	  background: #222;
+	}
+
+    .main
     {
-        font-family: Poppin, Montserrat, sans-serif;
+        min-height: calc(100vh - 83px);
+        display: flex;
+		
     }
 
     .logo 
     {
         margin-left: 1.5vw;
-        width: 3vw;
-        height: 3vw;
+        width: 10.335vw;
+        height: 1.5vw;
     }
     
     
     .navbar 
     {
         width:100%;
-        height:10vh;
+        height:5vw;
         background-color: #2d2d2d;
-        position: absolute !important;
+        position: fixed !important;
         margin-top: 0;
         padding-top: 0;
         justify-content: space-around;
         align-items: center;
         box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
-        z-index: 10;
+        z-index: 69;
+		transition: all 150ms ease-in-out;
     }
+    
+    /* 
+    .navbartext 
+    {
+        float:left; 
+        font-family: Montserrat, sans-serif; 
+        font-size:50px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        position: absolute;
+    } 
+    */
 
     .navtext 
     {
+		font-family:Poppins;
         color: #bebebedc !important;
         border: 1px;
         border-radius: 5px;
@@ -53,7 +114,7 @@ body
         padding-right: 3vw;
     }
 
-    a 
+    a
     {
         font-family: Montserrat, sans-serif;
         font-size: 1.12vw;
@@ -88,7 +149,7 @@ body
         color: #ffffff !important;
         text-shadow: 3px 3px 12px #FFFFFF;
         animation-name: fadein;
-        animation-duration: 2.4s;
+        /*animation-duration: 2.4s;*/
         animation-timing-function: ease;
     }
 
@@ -98,294 +159,225 @@ body
         35% {background-color: rgba(255, 0, 0, 0.435);}
         100% {background-color: rgba(255, 0, 0, 0.5);}
     }
+	.scroll-down nav 
+	{
+			transform: translate3d(0, -100%, 0);
+		
+	}
+
+	.scroll-up nav 
+	{
+			filter: drop-shadow(0 -10px 20px rgb(0, 0, 0));
+			
+			/*filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));*/
+		
+	}
+
+	.menu-is-open nav 
+	{
+		overflow:hidden;
+		filter: none;
+	}
+	.lessonsbody
+	{
+		width: 100%;
+		overflow:hidden;
+	}
+	.borders
+	{
+		/*border-right: solid;*/
+		background-color: #2b2e32;
+		height:100vh;
+		display: flex;
+		justify-content: center; /* Align horizontal */
+		align-items: center;
+		color: #fff;
+		
+	}
+	.rowsize
+	{
+		
+		height: 100vh;
+		overflow:hidden;
+	}
+	.titlelessons
+	{
+		text-align:center;
+		font-size:5vw;
+		font-family:myFirstFont;
+		/*
+		transform: translate(0,35vh);
+		*/
+	}
+	.titledescrip
+	{
+		font-family:Poppins;
+		font-size:2.5vw;
+		text-align:left;
+		
+		padding-top:1vw;
+		padding-left:5.25vw;
+	}
+	.getstarted 
+	{
+		
+		padding-top: 2vw;
+		color: black;
+		font-size: 1vw;
+		font-family:Poppins;
+		text-decoration: underline;
+		padding-left: 2vw;
+		
+	}
+	.getstarted:hover, .getstarted:active 
+	{
+		
+	}
+	
+	.rowsizesmall
+	{
+		height:100vh;
+	}
+	
+	.cols
+	{
+		font-family:Poppins;
+		font-size: 3vw;
+		display: flex;
+		align-items: center; /* Align vertical */
+		padding-top: 5vw;
+		
+	}
+	
+	#colleft
+	{
+		justify-content: right; 
+	}
+	#colcenter
+	{
+		justify-content: center; 
+	}
+	#colright
+	{
+		justify-content: left; 
+	}
+	.swordimage
+	{
+		width: 26.6vw;
+		height: 20vw;
+	}
+	.difflevel
+	{
+		position: relative;
+		background-color: #ececec;
+		color: black;
+		height:25vw;
+		width:85%;
+		font-family:Poppins;
+		border-radius: 20px;
+		transition: all 0.25s ease 0s;
+		/*border:solid;*/
+		border-color:black;
+		text-decoration: none;
+		
+		
+	}
+	
+	.difflevel:hover, .difflevel:active
+	{
+		transform: translate(0,-2%);
+		animation-name: updown;
+		animation-timing-function: ease;
+	}
+	@keyframes updown 
+    {
+        0% {transform: translate(0,0%);}
+        100% {transform: translate(0,-5%);}
+    }
+	
+	.headingofbox
+	{
+		font-family:myFirstFont;
+		margin-top: 1vw;
+		text-align:left;
+		color:black;
+		font-size: calc(1vw + 0.2em);
+	}
+	
+	.bodyofbox
+	{
+		margin-top: 1vw;
+		font-size: calc(1vw + 0em);
+		text-align:left;
+		font-weight: normal;
+		color:black;
+		height:7.5vw;
+
+	}
+	.boximagecontainer
+	{
+		margin-top:1vw;
+		position:relative;
+		display: inline-block;  
+		height:5vw;
+		width:5vw;	
+		margin-bottom:1vw;
+		
+	}
+	.boximage
+	{
+		height:100%;
+		width:100%;
+	}
+	
+	.bottomofbox
+	{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right:0;
+		font-size: calc(1vw - 0.1em);
+		margin-bottom:1vw;
+		margin-top:2vw;
+		color:black;
+		
+	}
+	
+	.containertriangle
+    {
+        position: absolute;
+		overflow: hidden;
+        width: 100%;
+        height: 100%;
+		z-index: -1000;
+		background-color:#c0dafd;
+    }
+	.shapebackground
+	{
+		background: linear-gradient(170deg,#ffffff,rgb(255, 255, 255) 30%,#ffffff);
+        height: 70vh;
+        position: absolute;
+        left: -30px;
+        right: -1vw;
+        margin-right: 0vw;
+        overflow: hidden;
+        transform: rotate(-6.2deg);
+        z-index: -1;
+	}
+	
+	.backgroundimage1
+	{
+		transform: translate(75vw,20vh) rotate(6.2deg);
+		height:5vw;
+		width:5vw;
+		
+	}
+	
+	
+	
 
 
-    .navtext:focus-visible {
-        outline: none !important;
-    }
-    .logo:focus-visible {
-        outline: none !important;
-    }
+	
+	
     
-    .beginnerlessons
-    {
-        /* background-color: #3dfff562; */
-        translate: 0 10vh;
-        padding-bottom: 0vh;
-        transition: 1s;
-        overflow: hidden;
-    }
-
-    #beginnerimagecontainer
-    {
-        /* translate: 0 -10vh; */
-        /* background-color: hsla(189, 100%, 58%, 0.255); */
-        /* background-color: #ffffff41; */
-        z-index: -1;
-        width: 100%;
-        height: 60vh;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #beginnerimage
-    {
-        /* translate: 0 10vh; */
-        /* position: absolute; */
-        object-fit: cover;
-        object-position: 0 35%;
-        height: 60vh;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.8;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        transition: 1s;
-        user-drag: none;
-        -webkit-user-drag: none;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-    }
-
-    #beginnerheader 
-    {
-        position: absolute;
-        font-size: 3vw;
-        padding-top: 3vh;
-        padding-left: 2vw;
-        font-weight: 600;
-        z-index: 1;
-    }
-
-    .beginnerlessons:hover, .beginnerlessons:active
-    {
-        text-shadow: 0 0 16px #FFFFFF;
-        animation-name: beginnerlessontextglow;
-        animation-duration: 3.4s;
-        animation-timing-function: ease;
-        animation: textincrease 3.4 ease;
-        font-size: 3.5vw;
-    }
-
-    @keyframes beginnerlessontextglow 
-    {
-        0% {text-shadow: 0 0 0 #000000; font-size: 3vw;}
-        35% {text-shadow: 0 0 16px #ffffff83; font-size: 3.15vw;}
-        100% {text-shadow: 0 0 16px #FFFFFF; font-size: 3.5vw;}
-    }
-
-    @keyframes textincrease
-    {
-        0% {font-size: 3vw;}
-        35% {font-size: 3.2vw;}
-        100% {font-size: 3.5vw;}
-    }
-
-    .beginnerimage:hover, .beginnerimage:active
-    {
-        transform: scale(1.1);
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .beginnerbackground
-    {
-        position: absolute;
-        background-color: hsl(189, 100%, 58%);
-        height: 60vh;
-        width: 100%;
-        padding-bottom: 60vh;
-        z-index: -1;
-    }
-
-    .intermediatelessons
-    {
-        /* background-color: #3dfff562; */
-        translate: 0 10vh;
-        padding-bottom: 0vh;
-        overflow: hidden;
-    }
-
-    #intermediateimagecontainer
-    {
-        /* translate: 0 -10vh; */
-        /* background-color: hsla(189, 100%, 58%, 0.255); */
-        /* background-color: #ffffff41; */
-        z-index: -1;
-        width: 100%;
-        height: 60vh;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #intermediateimage
-    {
-        /* translate: 0 10vh; */
-        /* position: absolute; */
-        object-fit: cover;
-        object-position: 0 35%;
-        height: 60vh;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.8;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        transition: 1s;
-        user-drag: none;
-        -webkit-user-drag: none;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-    }
-
-    #intermediateheader 
-    {
-        position: absolute;
-        font-size: 3vw;
-        padding-top: 3vh;
-        padding-left: 2vw;
-        font-weight: 600;
-        z-index: 1;
-    }
-
-    .intermediatelessons:hover, .intermediatelessons:active
-    {
-        text-shadow: 0 0 16px #FFFFFF;
-        animation-name: intermediatelessontextglow;
-        animation-duration: 3.4s;
-        animation-timing-function: ease;
-        animation: textincrease 3.4 ease;
-        font-size: 3.5vw;
-    }
-
-    @keyframes intermediatelessontextglow 
-    {
-        0% {text-shadow: 0 0 0 #000000; font-size: 3vw;}
-        35% {text-shadow: 0 0 16px #ffffff83; font-size: 3.15vw;}
-        100% {text-shadow: 0 0 16px #FFFFFF; font-size: 3.5vw;}
-    }
-
-    @keyframes textincrease
-    {
-        0% {font-size: 3vw;}
-        35% {font-size: 3.2vw;}
-        100% {font-size: 3.5vw;}
-    }
-
-    .intermediateimage:hover, .intermediateimage:active
-    {
-        transform: scale(1.1);
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .intermediatebackground
-    {
-        position: absolute;
-        background-color: #f1ff2b;
-        height: 60vh;
-        width: 100%;
-        padding-bottom: 60vh;
-        z-index: -1;
-    }
-
-    .advancedlessons
-    {
-        /* background-color: #3dfff562; */
-        translate: 0 10vh;
-        padding-bottom: 0vh;
-        overflow: hidden;
-    }
-
-    #advancedimagecontainer
-    {
-        /* translate: 0 -10vh; */
-        /* background-color: hsla(189, 100%, 58%, 0.255); */
-        /* background-color: #ffffff41; */
-        z-index: -1;
-        width: 100%;
-        height: 60vh;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #advancedimage
-    {
-        /* translate: 0 10vh; */
-        /* position: absolute; */
-        object-fit: cover;
-        object-position: 0 35%;
-        height: 60vh;
-        width: 100%;
-        z-index: -1;
-        opacity: 0.8;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        transition: 1s;
-        user-drag: none;
-        -webkit-user-drag: none;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-    }
-
-    #advancedheader 
-    {
-        position: absolute;
-        font-size: 3vw;
-        padding-top: 3vh;
-        padding-left: 2vw;
-        font-weight: 600;
-        z-index: 1;
-    }
-
-    .advancedlessons:hover, .advancedlessons:active
-    {
-        text-shadow: 0 0 16px #FFFFFF;
-        animation-name: advancedlessontextglow;
-        animation-duration: 3.4s;
-        animation-timing-function: ease;
-        animation: textincrease 3.4 ease;
-        font-size: 3.5vw;
-    }
-
-    @keyframes advancedlessontextglow 
-    {
-        0% {text-shadow: 0 0 0 #000000; font-size: 3vw;}
-        35% {text-shadow: 0 0 16px #ffffff83; font-size: 3.15vw;}
-        100% {text-shadow: 0 0 16px #FFFFFF; font-size: 3.5vw;}
-    }
-
-    @keyframes textincrease
-    {
-        0% {font-size: 3vw;}
-        35% {font-size: 3.2vw;}
-        100% {font-size: 3.5vw;}
-    }
-
-    .advancedimage:hover, .advancedimage:active
-    {
-        transform: scale(1.1);
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .advancedbackground
-    {
-        position: absolute;
-        background-color: #ff2b2b;
-        height: 60vh;
-        width: 100%;
-        padding-bottom: 60vh;
-        z-index: -1;
-    }
+	
