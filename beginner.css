@@ -1,3 +1,12 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(mokoto.otf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  
+  }
+
 body
     {
         margin: 0;
