@@ -1,0 +1,349 @@
+html {
+  overflow-y: overlay;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(mokoto.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(Poppins-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+.main {
+  min-height: calc(100vh - 83px);
+  display: flex;
+}
+
+.logo {
+  margin-left: 1.5vw;
+  width: 10.335vw;
+  height: 1.5vw;
+}
+
+.navbar {
+  width: 100%;
+  height: 5vw;
+  position: fixed !important;
+  margin-top: 0;
+  padding-top: 0;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
+  z-index: 69;
+  transition: all 150ms ease-in-out;
+}
+
+/* 
+    .navbartext 
+    {
+        float:left; 
+        font-family: Montserrat, sans-serif; 
+        font-size:50px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        position: absolute;
+    } 
+    */
+
+.navtext {
+  font-family: Poppins;
+  color: #bebebedc !important;
+  border: 1px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  transition: all 1.3s ease 0s;
+  padding: 14px 25px;
+  font-size: 1.12vw;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-item {
+  text-align: right;
+}
+
+.links {
+  padding-right: 3vw;
+}
+
+a {
+  /* text-shadow: 2px 2px 18px #FFFFFF; */
+
+  display: inline-block;
+}
+
+.nohover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.nohover:hover {
+  color: inherit !important;
+}
+
+.navtext:hover,
+.navtext:active {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-bottom-color: #330000;
+  border-top-color: #330000;
+  border-left-color: #330000;
+  border-right-color: #330000;
+  color: #ffffff !important;
+  text-shadow: 3px 3px 12px #ffffff;
+  animation-name: fadein;
+  /*animation-duration: 2.4s;*/
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  0% {
+    background-color: rgba(255, 0, 0, 0);
+  }
+  35% {
+    background-color: rgba(255, 0, 0, 0.435);
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px rgb(0, 0, 0));
+
+  /*filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));*/
+}
+
+.menu-is-open nav {
+  overflow: hidden;
+  filter: none;
+}
+
+.displayvideo {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 83px);
+  box-shadow: 0 3px 20px 20px rgb(0 0 0 / 18%);
+  pointer-events: none;
+  background-color: #000000;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .displayvideo iframe {
+    height: 56.25vw;
+  }
+}
+
+.displayvideo iframe {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.displayvideo {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 3px 20px 20px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+
+.displayvideo iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .displayvideo iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .displayvideo iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+
+.videotext {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  transform: translate(0px, 0vh);
+  height: 100vh;
+}
+
+.introtext {
+  position: relative;
+  top: 45%;
+  transform: translate(0, -50%);
+  left: 20vw;
+  font-size: 3.5vw;
+  font-family: myFirstFont, Montserrat, sans-serif;
+  /*font-weight: bold;*/
+  color: white;
+  z-index: 2;
+
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+.introdescription {
+  position: relative;
+  top: 45%;
+  transform: translate(0, -50%);
+  left: 20vw;
+  font-size: 1.3125vw;
+  font-family: myFirstFont, Montserrat, sans-serif;
+  /*font-weight: bold;*/
+  color: white;
+  z-index: 2;
+
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff;
+  }
+  to {
+    text-shadow: 0 0 5.5px #fff, 0 0 5.75px #fff, 0 0 6px #fff;
+  }
+}
+
+.navtext:focus-visible {
+  outline: none !important;
+}
+.logo:focus-visible {
+  outline: none !important;
+}
+
+.secbody {
+  padding-top: 5vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.secintrotext {
+  font-family: Poppins;
+  color: black;
+  font-size: 5vw;
+  text-align: left;
+  font-weight: bold;
+}
+.secintrotext1 {
+  margin-top: 1vw;
+  font-family: PoppinsLight;
+  color: #313131;
+  font-size: 1.25vw;
+  text-align: left;
+  margin-bottom: 2.5vw;
+}
+
+.myrow {
+  height: 12vw;
+  margin-bottom: 5vw;
+}
+
+.mycol {
+  padding-top: 1vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-bottom: 1vw;
+}
+
+.boxybox {
+  border-top: 1px solid #000;
+  height: calc(100% - 1vw);
+  width: 100%;
+  padding-top: 0.75vw;
+  padding-bottom: 0.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.topboxy {
+  font-family: Poppins;
+  color: black;
+  font-size: 1.25vw;
+  text-align: left;
+  font-weight: bold;
+}
+
+.midboxy {
+  font-family: Poppins;
+  color: black;
+  font-size: 1vw;
+  text-align: left;
+  font-weight: 400;
+}
+
+.lowboxy {
+  font-family: Poppins;
+  color: black;
+  font-size: 1vw;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lowboxy:hover,
+.lowboxy:active {
+  color: black;
+}

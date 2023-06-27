@@ -1,0 +1,292 @@
+body
+    {
+        margin: 0;
+        padding: 0;
+        background-color: #383838;
+        height: 100%;
+        color: #fff;
+    }
+    
+    .font 
+    {
+        font-family: Poppin, Montserrat, sans-serif;
+    }
+
+    .logo 
+    {
+        margin-left: 1.5vw;
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    
+    .navbar 
+    {
+        width:100%;
+        height:10vh;
+        background-color: #2d2d2d;
+        position: absolute !important;
+        margin-top: 0;
+        padding-top: 0;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
+        z-index: 10;
+    }
+
+    .navtext 
+    {
+        color: #bebebedc !important;
+        border: 1px;
+        border-radius: 5px;
+        text-decoration: none !important;
+        transition: all 1.3s ease 0s;
+    }
+
+    .nav-item 
+    {
+        text-align: right;
+    }
+    
+    .links
+    {
+        padding-right: 3vw;
+    }
+
+    a
+    {
+        font-family: Montserrat, sans-serif;
+        font-size: 1.12vw;
+        font-weight: bold;
+        /* text-shadow: 2px 2px 18px #FFFFFF; */
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .nohover
+    {
+        color:inherit !important;
+        text-decoration: none !important;
+    }
+
+    .nohover:hover
+    {
+        color:inherit !important
+    }
+
+    .navtext:hover, .navtext:active 
+    {
+        background-color: rgba(255, 0, 0, 0.5);
+        border-bottom-color:#330000; 
+        border-top-color:#330000;  
+        border-left-color:#330000;  
+        border-right-color:#330000;
+        color: #ffffff !important;
+        text-shadow: 3px 3px 12px #FFFFFF;
+        animation-name: fadein;
+        animation-duration: 2.4s;
+        animation-timing-function: ease;
+    }
+
+    @keyframes fadein 
+    {
+        0% {background-color: rgba(255, 0, 0, 0);}
+        35% {background-color: rgba(255, 0, 0, 0.435);}
+        100% {background-color: rgba(255, 0, 0, 0.5);}
+    }
+
+
+    .navtext:focus-visible {
+        outline: none !important;
+    }
+    .logo:focus-visible {
+        outline: none !important;
+    }
+    
+    .beginnerlessons
+    {
+        /* background-color: #3dfff562; */
+        translate: 0 10vh;
+        padding-bottom: 0vh;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 1px #fff;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 35px #fff;
+        }
+      }
+    
+
+    #beginnerimagecontainer
+    {
+        /* translate: 0 -10vh; */
+        background-color: #2bdfff41;
+        /* background-color: #ffffff41; */
+        z-index: -1;
+        width: 100%;
+        height: 30vh;
+    }
+
+    #beginnerimage
+    {
+        /* translate: 0 10vh; */
+        position: absolute;
+        object-fit: cover;
+        object-position: 0 35%;
+        height: 30vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #beginnerheader 
+    {
+        position: absolute;
+        font-size: 4.5vw;
+        padding-top: 6.4vh;
+        padding-left: 2vw;
+        width: 100%;
+        height: 30vh;
+        font-weight: 800;
+        z-index: 1;
+        text-align: center;
+    }
+
+    /* .beginnerlessons:hover, .beginnerlessons:active
+    {
+        text-shadow: 0 0 16px #FFFFFF;
+        animation-name: beginnerlessontextglow;
+        animation-duration: 3.4s;
+        animation-timing-function: ease;
+    } */
+
+    @keyframes beginnerlessontextglow 
+    {
+        0% {text-shadow: 0 0 0 #000000;}
+        35% {text-shadow: 0 0 16px #ffffff83;}
+        100% {text-shadow: 0 0 16px #FFFFFF;}
+    }
+
+    .beginnerbackground
+    {
+        position: absolute;
+        background-color: #3dfff562;
+        translate: 0 10vh;
+        padding-bottom: 60vh;
+        z-index: 1;
+    }
+
+    .containertriangle
+    {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .righttriangle
+    {
+        background: linear-gradient(170deg,#c0dafd,rgb(209, 225, 254) 30%,#d1ecfe);
+        height: 80vh;
+        position: absolute;
+        left: -30px;
+        right: -1vw;
+        margin-right: 0vw;
+        overflow: hidden;
+        transform: rotate(-4deg);
+        z-index: -1;
+    }
+
+    .boxes 
+    {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .examplebox
+    {
+        text-align: left;
+        padding: 1.85px;
+        border: solid;
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: #19161a;
+        background-color: #ffffff !important;
+    }
+
+    .examplecontainer 
+    {
+        padding: 20px;
+        position: absolute;
+        margin-top: 1.5vh !important; 
+        background: none !important;
+    }
+
+    .exampleboxheader 
+    {
+        padding: 20px 10px;
+        font-weight: 500;
+        font-size: 1.3vw;
+        color:#5a5a5a;
+        cursor:auto;
+    }
+
+    .exampledropdown 
+    {
+        display: none;
+        padding: 0 1.5vw 2vh 1.5vw;
+        font-size: 1.15vw;
+    }
+
+    .dropdown_arrow {
+        left: 20vw;
+        top: 2.7vh;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+        overflow: visible;
+        right: 30px;
+        width: 1vw;
+        height: 1.97vh;
+        transform: rotate(45deg);
+    }
+
+    #aimingbox
+    {
+        position: absolute;
+        margin-left: 5vw;
+        transform: translate(0, -80vh);
+    }
+
+    #wtapbox
+    {
+        left: 40vw;
+        /* margin-left: 5vw; */
+        transform: translate(0, -80vh);
+    }
+
+    .iframevideo
+    {
+        height: 30.5vh;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .w-tapvideo
+    {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .exampleboxheadercursoricon 
+    {
+        cursor: pointer;
+    }
