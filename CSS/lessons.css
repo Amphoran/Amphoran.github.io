@@ -199,24 +199,20 @@ a {
   overflow-y: overlay;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: calc(50vh - 15vw);
-}
-
-.rowsizesmall1 {
-  height: 100vh;
-  overflow-y: overlay;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: calc(50vh - 15vw);
+  padding-top: calc(50vh - 12.5vw - calc( 2 * calc(var(--bs-gutter-x) * .5)) + 2.5vw);
+  padding-bottom: calc( 2 * calc(var(--bs-gutter-x) * .5));
 }
 
 .cols {
   font-family: Poppins;
   font-size: 3vw;
   display: flex;
-  padding-top:5vw;
+  padding-top: calc( 2 * calc(var(--bs-gutter-x) * .5));
   
 }
+
+
+/* calc(2 * calc(1.5rem * .5)) */
 
 #colleft {
   justify-content: right;
