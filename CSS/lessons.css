@@ -199,22 +199,23 @@ a {
   overflow-y: overlay;
   padding-left: 2vw;
   padding-right: 2vw;
+  padding-top: calc(50vh - 15vw);
 }
 
 .rowsizesmall1 {
   height: 100vh;
   overflow-y: overlay;
-  padding-top: 20.95vh;
   padding-left: 2vw;
   padding-right: 2vw;
+  padding-top: calc(50vh - 15vw);
 }
 
 .cols {
   font-family: Poppins;
   font-size: 3vw;
   display: flex;
-  align-items: center; /* Align vertical */
-  padding-top: 5vw;
+  padding-top:5vw;
+  
 }
 
 #colleft {
