@@ -11,6 +11,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: PoppinsLight;
+  src: url(Poppins-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: mySecondFont;
@@ -79,10 +86,10 @@
   font-family: Poppins;
   color: #bebebedc !important;
   border: 1px;
-  border-radius: 5px;
+  border-radius: 0.36vw;
   text-decoration: none !important;
   transition: all 1.3s ease 0s;
-  padding: 14px 25px;
+  padding: 1vw 1.79vw;
   font-size: 1.12vw;
   font-weight: bold;
   display: inline-block;
@@ -196,7 +203,16 @@ a {
 
 .rowsizesmall {
   height: 100vh;
-  overflow-y: overlay;
+  padding-left: 2vw;
+  padding-right: calc(2vw + 20px);
+  padding-top: calc(50vh - 12.5vw - calc( 2 * calc(var(--bs-gutter-x) * .5)) + 2.5vw);
+  padding-bottom: calc( 2 * calc(var(--bs-gutter-x) * .5));
+}
+
+.rowsizesmallgamesen {
+  height: 100vh;
+  overflow-y: scroll;
+  /*overflow-y:overlay*/
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: calc(50vh - 12.5vw - calc( 2 * calc(var(--bs-gutter-x) * .5)) + 2.5vw);
@@ -318,20 +334,97 @@ a {
   background: linear-gradient(170deg, #ffffff, rgb(255, 255, 255) 30%, #ffffff);
   height: 70vh;
   position: absolute;
-  left: -30px;
-  right: -1vw;
+  left: -5vw;
+  right: -5vw;
   margin-right: 0vw;
   overflow: hidden;
-  transform: rotate(-6.2deg);
+  transform: rotate(-5.5deg);
   z-index: -1;
 }
 
 .backgroundimage1 {
-  transform: translate(75vw, 20vh) rotate(6.2deg);
+  transform: translate(75vw, 20vh) rotate(5.5deg);
   height: 5vw;
   width: 5vw;
 }
-.throwaway {
-  height: 0.1%;
-  background-color: #212529;
+
+/* About section*/
+
+.aboutbody
+{
+	width:100%;
+	overflow:hidden;
+}
+
+.rowabout
+{
+	border-right: 5px solid #007ab6;
+	padding-top:5vw;
+	height:100vh;
+	
+}
+
+.colabout
+{
+	height:100%;
+	width:100%;
+	padding:0 !important;
+}
+
+.textabout
+{
+	position:relative;
+	margin-left:10vw;
+	margin-right:5vw;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.largetextabout
+{
+	font-family: Poppins;
+	color: black;
+	font-size: 2.5vw;
+	text-align: left;
+	font-weight: bold;
+	
+}
+
+.smalltextabout
+{
+	margin-top: 2vw;
+	font-family: PoppinsLight;
+	color: #313131;
+	font-size: 1.25vw;
+	text-align: left;
+	line-height: 1.75;
+
+}
+
+.lowesttextabout
+{
+	margin-top: 2vw;
+	font-family: myFirstFont;
+	color: black;
+	font-size: 1vw;
+	text-align: center;
+}
+
+.aboutimagecontainer
+{
+	display: flex;
+	justify-content: center; /* Align horizontal */
+	align-items:center;
+	height:100%;
+
+}
+.aboutimage
+{
+	
+	width: 100%;
+
+	height: 100%;
+
 }

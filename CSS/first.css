@@ -1,6 +1,8 @@
+/*
 html {
   overflow-y: overlay;
 }
+*/
 @font-face {
   font-family: myFirstFont;
   src: url(mokoto.otf);
@@ -82,10 +84,10 @@ html {
   font-family: Poppins;
   color: #bebebedc !important;
   border: 1px;
-  border-radius: 5px;
+  border-radius: 0.36vw;
   text-decoration: none !important;
   transition: all 1.3s ease 0s;
-  padding: 14px 25px;
+  padding: 1vw 1.79vw;
   font-size: 1.12vw;
   font-weight: bold;
   display: inline-block;
