@@ -42,9 +42,11 @@
 
 .exampleoverallcontainer
 {
-    padding-left: 7.5vw !important; 
-    padding-right: 7.5vw !important;
+    /*padding-left: 7.5vw !important; 
+    padding-right: 7.5vw !important;*/
+	margin-bottom:5vw;
 }
+
 
 .examplestext
 {
