@@ -339,8 +339,8 @@ a {
 .lowboxy {
   font-family: Poppins;
   color: black;
-  font-size: 0.75vw;
-  text-align: left;
+  font-size: 0.85vw;
+  text-align: right;
   font-weight: bold;
   text-decoration: none;
 }
