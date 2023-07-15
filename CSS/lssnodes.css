@@ -315,3 +315,58 @@
     margin-bottom: 0.5vw;
 	font-weight: normal;
 }
+
+.mainbody
+{
+	width:100%;
+}
+
+.leftcol
+{
+	padding-right:2.5vw!important;
+	padding-left: calc(calc(var(--bs-gutter-x) * .5) + 2.5vw)!important;
+	padding-top:3.5vw;
+
+}
+
+.lssw-tapvideo
+{
+    position:relative;
+	overflow:hidden;
+	padding-bottom: 56.25%;
+}
+
+.lssiframevideo
+{
+	position:absolute;
+	border-radius:2.5vw;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+.rightcol
+{
+	padding-left:2.5vw!important;
+	padding-right: calc(calc(var(--bs-gutter-x) * .5) + 2.5vw)!important;
+	padding-top:3.5vw;
+}
+
+.toptextcol
+{
+	font-family: Poppins;
+    color: black;
+    font-size: 3.5vw;
+    text-align: left;
+    font-weight: bold;
+}
+.bottomtextcol
+{
+	font-family: PoppinsLight;
+    color: black;
+    font-size: 1.25vw;
+    text-align: left;
+	line-height: 2;
+	margin-left: 2.5vw;
+}
