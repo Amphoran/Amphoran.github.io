@@ -78,9 +78,57 @@
 					</div>
 				</div>
 			</div>	
+			<div class = "mainbody">
+				<div class = "row">
+					<div class = "col-6 leftcol" >
+						<div class=" lssw-tapvideo">
+							<iframe id="videoPlayer" class="lssiframevideo" title="video" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen src="https://www.youtube-nocookie.com/embed/VHnfwqhjE04?autoplay=0&controls=1&showinfo=0&loop=1&start=0"></iframe>
+						</div> 
+					</div>
+					
+					<div class = "col-6 rightcol">
+						<div class = "toptextcol">
+							Chapters
+						</div>
+						<div class = "bottomtextcol">
+							<a href="#" onclick="changeVideo('video1')">0:30</a> Sensitivity 
+						</div>
+						<div class = "bottomtextcol">
+							<a href="#" onclick="changeVideo('video2')">0:45<a> Mouse Acceleration
+						</div>
+						<div class = "bottomtextcol">
+							<a href="#" onclick="changeVideo('video3')">1:10<a> Make your man go crazy with these three slurping techniques
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
 
 			
 		</div>
+		<script>
+			function changeVideo(videoId) 
+			{
+				var videoPlayer = document.getElementById('videoPlayer');
+				if (videoId === 'video1') 
+				{
+					videoPlayer.src = 'https://www.youtube-nocookie.com/embed/VHnfwqhjE04?autoplay=1&controls=1&showinfo=0&loop=1&start=30'
+				} 
+				else if (videoId === 'video2') 
+				{
+					videoPlayer.src = 'https://www.youtube-nocookie.com/embed/VHnfwqhjE04?autoplay=1&controls=1&showinfo=0&loop=1&start=45'
+				}
+				else if (videoId === 'video3') 
+				{
+					videoPlayer.src = 'https://www.youtube-nocookie.com/embed/VHnfwqhjE04?autoplay=1&controls=1&showinfo=0&loop=1&start=70'
+				}
+			}
+		</script>
 		<script type="text/javascript" src="../JavaScript/navbarscript.js"></script>
 
 		<script
