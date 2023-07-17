@@ -27,6 +27,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: myThirdFont;
+  src: url(Panton-Trial-Black.ttf);
+  /*MinecraftRegular-Bmg3.otf*/
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -179,8 +187,8 @@
 	background-color: #ff2b2bcb;
 	/* background-color: #ffffff41; */
 	/* z-index: -1; */
-    width: 100%;
-    height: 20vw;
+  width: 100%;
+  height: 20vw;
 	/* position:absolute; */
   overflow: hidden;
 }
@@ -244,21 +252,21 @@
 .smallboxhead
 {
 	font-family: Poppins;
-    color: black;
-    font-size: 3.5vw;
-    text-align: left;
-    font-weight: bold;
+  color: black;
+  font-size: 3.5vw;
+  text-align: left;
+  font-weight: bold;
 	margin-top:2.5vw;
 }
 
 .smallboxsubhead
 {
 	margin-top: 1vw;
-    font-family: PoppinsLight;
-    color: #313131;
-    font-size: 1.25vw;
-    text-align: left;
-    margin-bottom: 2.5vw;
+  font-family: PoppinsLight;
+  color: #313131;
+  font-size: 1.25vw;
+  text-align: left;
+  margin-bottom: 2.5vw;
 	font-weight: normal;
 }
 
@@ -269,22 +277,22 @@
 
 .tableofconthead
 {
-    font-family: PoppinsLight;
-    color: black;
-    font-size: 2vw;
-    text-align: left;
-    margin-bottom: 0.5vw;
+  font-family: PoppinsLight;
+  color: black;
+  font-size: 2vw;
+  text-align: left;
+  margin-bottom: 0.5vw;
 	font-weight: normal;
 }
 
 .tableofcontpoints
 {
 	margin-left:3vw;
-    font-family: PoppinsLight;
-    color: black;
-    font-size: 1vw;
-    text-align: left;
-    margin-bottom: 0.5vw;
+  font-family: PoppinsLight;
+  color: black;
+  font-size: 1vw;
+  text-align: left;
+  margin-bottom: 0.5vw;
 	font-weight: normal;
 }
 
@@ -308,11 +316,11 @@
 .subsectionshead
 {
 	
-    font-family: Poppins;
-    color: black;
-    font-size: 2.5vw;
-    text-align: left;
-    margin-bottom: 0.5vw;
+  font-family: Poppins;
+  color: black;
+  font-size: 2.5vw;
+  text-align: left;
+  margin-bottom: 0.5vw;
 	font-weight: normal;
 }
 
@@ -326,12 +334,11 @@
 	padding-right:2.5vw!important;
 	padding-left: calc(calc(var(--bs-gutter-x) * .5) + 2.5vw)!important;
 	padding-top:3.5vw;
-
 }
 
 .lssw-tapvideo
 {
-    position:relative;
+  position:relative;
 	overflow:hidden;
 	padding-bottom: 56.25%;
 }
@@ -356,17 +363,61 @@
 .toptextcol
 {
 	font-family: Poppins;
-    color: black;
-    font-size: 3.5vw;
-    text-align: left;
-    font-weight: bold;
+  color: black;
+  font-size: 3.5vw;
+  text-align: left;
+  font-weight: bold;
 }
 .bottomtextcol
 {
 	font-family: PoppinsLight;
-    color: black;
-    font-size: 1.25vw;
-    text-align: left;
+  color: black;
+  font-size: 1.25vw;
+  text-align: left;
 	line-height: 2;
 	margin-left: 2.5vw;
+}
+
+.sectionheader
+{
+	font-family: Poppins;
+  color: black;
+  font-size: 3.5vw;
+  text-align: left;
+  font-weight: bold;
+  margin: 0.8vw;
+}
+.sectioncontent
+{
+	font-family: Poppins;
+  color: black;
+  font-size: 1.5vw;
+  text-align: left;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.imagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.embedvids
+{
+  position:relative;
+	overflow:hidden;
+	width: 40%;
+  height: 40%;
+}
+
+.imgenlarge {
+  transition: transform .45s;
+}
+
+.imgenlarge:hover {
+  transform:scale(1.18); 
+  color: black;
 }
