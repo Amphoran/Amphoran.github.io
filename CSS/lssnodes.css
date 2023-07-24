@@ -56,9 +56,10 @@
 }
 
 .main {
-  min-height: calc(100vh - 83px);
+  /* min-height: calc(100vh - 83px); */
   /* display: flex; */
   overflow: hidden;
+  z-index: -1;
 }
 
 .logo {
@@ -471,4 +472,25 @@
 
 .roundborder {
   border-radius: 1.5rem;
+}
+
+#backButton {
+  padding: 1vw 3vh;
+  background-color: #ffffff;
+  color: #fff;
+  border: solid;
+  border-radius: 0.8rem;
+  border-color: #222;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #790000;
+  cursor: pointer;
+  font-size: 16px; 
+  transition: transform .45s !important;
+}
+
+/* Hover effect */
+#backButton:hover {
+  background-color: #a0a0a0;
+  transform: scale(1.18);
 }
