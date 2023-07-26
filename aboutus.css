@@ -1,0 +1,221 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(mokoto.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(Poppins-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(conthrax-sb.ttf);
+  /*MinecraftRegular-Bmg3.otf*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+.main {
+  min-height: calc(100vh - 83px);
+  display: flex;
+  overflow: hidden;
+}
+
+.logo {
+  margin-left: 1.5vw;
+  width: 10.335vw;
+  height: 1.5vw;
+}
+
+.navbar {
+  width: 100%;
+  height: 5vw;
+  position: fixed !important;
+  margin-top: 0;
+  padding-top: 0;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.35);
+  z-index: 69;
+  transition: all 150ms ease-in-out;
+  overflow: hidden;
+}
+
+/* 
+    .navbartext 
+    {
+        float:left; 
+        font-family: Montserrat, sans-serif; 
+        font-size:50px;
+        text-shadow: 4px 4px 8px #FFFFFF;
+        position: absolute;
+    } 
+    */
+
+.navtext {
+  font-family: Poppins;
+  color: #bebebedc !important;
+  border: 1px;
+  border-radius: 0.36vw;
+  text-decoration: none !important;
+  transition: all 1.3s ease 0s;
+  padding: 1vw 1.79vw;
+  font-size: 1.12vw;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-item {
+  text-align: right;
+}
+
+.links {
+  padding-right: 3vw;
+}
+
+.nohover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.nohover:hover {
+  color: inherit !important;
+}
+
+.navtext:hover,
+.navtext:active {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-bottom-color: #330000;
+  border-top-color: #330000;
+  border-left-color: #330000;
+  border-right-color: #330000;
+  color: #ffffff !important;
+  text-shadow: 3px 3px 12px #ffffff;
+  animation-name: fadein;
+  /*animation-duration: 2.4s;*/
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  0% {
+    background-color: rgba(255, 0, 0, 0);
+  }
+  35% {
+    background-color: rgba(255, 0, 0, 0.435);
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px rgb(0, 0, 0));
+
+  /*filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));*/
+}
+
+.menu-is-open nav {
+  overflow: hidden;
+  filter: none;
+} 
+
+.toprow {
+  height: 100vh;
+  transform: translateY(5.5vh);
+}
+
+.abouttext {
+  justify-content: center;
+  display: flex; 
+  flex-direction: column;
+  height: 100%;
+  padding-right: 7.8vw !important; 
+  padding-left: 8.8vw !important;
+}
+
+.largetextabout
+{
+	font-family: Poppins;
+	color: black;
+	font-size: 2.5vw;
+	text-align: left;
+	font-weight: bold;
+  padding-bottom: 2.4vh;
+	
+}
+
+.smalltextabout
+{
+	margin-top: 2vw;
+	font-family: PoppinsLight;
+	color: #313131;
+	font-size: 1.25vw;
+	text-align: left;
+	line-height: 1.75;
+  padding-bottom: 2vw;
+
+}
+
+.lowesttextabout
+{
+	margin-top: 2vw;
+	font-family: myFirstFont;
+	color: black;
+	font-size: 1vw;
+	text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2vw;
+}
+
+.aboutimagecontainer
+{
+	display: flex;
+  flex-direction: column;
+	justify-content: center; /* Align horizontal */
+	align-items:center;
+	height:100%;
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.aboutimage
+{
+	width: 33.3vw;
+	height: calc(33.3vw * 1.33);
+	border-radius: 5vw;
+}
