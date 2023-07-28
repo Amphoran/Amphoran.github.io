@@ -1,3 +1,27 @@
+$(document).ready(function() {
+	// Set the initial state of the dropdown to be open.
+	$('.exampledropdown').slideDown(500);
+  
+	// When a button with the class 'examplebutton1' is clicked, execute the following function:
+	$('.examplebutton1').click(function(e) {
+	  const dropdown = $('.exampledropdown', this);
+	  if (dropdown.is(':animated')) return;
+	  // Toggle the visibility of the dropdown with a sliding animation that lasts 500 milliseconds.
+	  dropdown.slideToggle(500);
+  
+	  // Find the icon element with the class 'exampleboxheadercursoricon1' within the clicked button's scope.
+	  const icon = $('.exampleboxheadercursoricon1', this);
+  
+	  // Retrieve the current rotation angle of the icon, convert it to a floating-point number (if available), or default to 0.
+	  // Add 180 degrees to the current rotation, then take the modulo 360 to keep the value within the range [0, 359].
+	  // Set the new rotation as a CSS style property on the icon.
+	  icon.css('rotate', ((parseFloat(icon.css('rotate')) || 0) + 180) % 360 + 'deg');
+	});
+  });
+
+  //btw idk wtf this is up here but i copied it 
+  // the variables are declared wrong and idk what it does, but the website works so idk wtf etc 
+
 let rotation1 = 0;
 function rotateImg1() 
 {
